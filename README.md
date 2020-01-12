@@ -1,4 +1,4 @@
-# React Component Library
+# Segment React Component Library
 
 ## Getting started
 This was created with the Create React App so reference those docs whenever you can.
