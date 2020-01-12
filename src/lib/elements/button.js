@@ -7,10 +7,30 @@ const Button = ({
   material = false,
   circle = false,
   block = false,
+  inverted = false,
+  disabled = false,
+  dataIcon,
 }) => {
+  const base = 'spx-btn'
+  const isIcon = icon ? `${base}--icon` : ''
+  const isMaterial = material ? `${base}--material` : ''
+  const isCircle = circle ? `${base}--circle` : ''
+  const isBlock = block ? `${base}--block` : ''
+  const isInverted = inverted ? `${base}--${variant}--inverted` : ''
 
   return (
-    <button className={`spx-btn spx-btn--${variant}`}>
+    <button
+      className={`
+        spx-btn spx-btn--${variant}
+        ${isInverted}
+        ${isIcon}
+        ${isMaterial}
+        ${isCircle}
+        ${isBlock}
+      `}
+      data-icon={dataIcon}
+      disabled={disabled}
+    >
       {children}
     </button>
   )

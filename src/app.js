@@ -1,14 +1,20 @@
 import React from 'react'
-import { Button } from './lib'
+import './docs.css'
+import './prettyprint.css'
+import { ButtonPage } from './pages'
 
+// TODO: create routing for pages
 const App = () => {
   return (
-    <>
-      <h1>Hello World</h1>
-      <Button>
-        hello world
-      </Button>
-    </>
+    <div className="sgr-core">
+      <div className="sgr-core-menu">
+        Menu
+      </div>
+
+      <div className="sgr-core-page">
+        <ButtonPage />
+      </div>
+    </div>
   )
 }
 
