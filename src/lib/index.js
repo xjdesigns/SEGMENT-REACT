@@ -1,6 +1,5 @@
-import TextInput from "./TextInput";
-import lState from './store/component/reducer'
+import Button from './elements/button'
+
 export {
-  TextInput,
-  lState,
-};
+  Button,
+}

@@ -1,31 +1,47 @@
 {
-  "name": "simple-component-library",
-  "description": "React app components library with exported redux reducer",
+  "name": "segment_react",
+  "description": "React components for use with segment css",
   "version": "0.1.0",
   "scripts": {
     "start": "react-scripts start",
     "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__",
     "test": "react-scripts test --env=jsdom",
+    "test:coveralls": "npm run test:coverage -- --coverageReporters=text-lcov | coveralls",
     "eject": "react-scripts eject",
-    "babel:watch": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --watch --copy-files --ignore __tests__,spec.js,test.js,__snapshots__"
+    "babel:watch": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --watch --copy-files --ignore __tests__,spec.js,test.js,__snapshots__",
+    "release": "standard-version"
   },
   "peerDependencies": {
-    "react": "^16.4.1",
-    "react-redux": "^5.0.7",
-    "redux": "^4.0.0"
+    "react": "^16.8.1"
   },
   "devDependencies": {
+    "@babel/cli": "^7.7.7",
+    "@babel/core": "^7.7.7",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/preset-react": "^7.7.4",
     "babel-cli": "^6.26.0",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
-    "react-redux": "^5.0.7",
-    "react-scripts": "1.1.4",
-    "redux": "^4.0.0"
+    "babel-preset-react-app": "^9.1.0",
+    "coveralls": "^3.0.9",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
+    "react-scripts": "^3.3.0"
   },
   "main": "dist/index.js",
   "module": "dist/index.js",
   "files": [
     "dist",
     "README.md"
-  ]
+  ],
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }

@@ -1,22 +1,17 @@
 import { TESTING } from './actionType';
-
-export var initialState = {
+export const initialState = {
   testing: false
 };
-
-export default function lState() {
-  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
-  var action = arguments[1];
-
-  console.warn('working');
+export default function lState(state = initialState, action) {
   switch (action.type) {
     case TESTING:
       {
-        var newState = Object.assign({}, state, {
+        const newState = { ...state,
           testing: action.payload.vis
-        });
+        };
         return newState;
       }
+
     default:
       {
         return state;
