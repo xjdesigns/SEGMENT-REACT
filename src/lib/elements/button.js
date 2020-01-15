@@ -10,6 +10,7 @@ const Button = ({
   inverted = false,
   disabled = false,
   dataIcon,
+  ...additionalProps
 }) => {
   const base = 'spx-btn'
   const isIcon = icon ? `${base}--icon` : ''
@@ -30,6 +31,7 @@ const Button = ({
       `}
       data-icon={dataIcon}
       disabled={disabled}
+      {...additionalProps}
     >
       {children}
     </button>

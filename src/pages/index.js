@@ -1,2 +1,6 @@
 import ButtonPage from './ButtonPage'
-export {ButtonPage}
+import FormPage from './FormPage'
+export {
+  ButtonPage,
+  FormPage,
+}

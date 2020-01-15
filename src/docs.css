@@ -5,13 +5,14 @@
 
 .sgr-core-menu {
   padding: 24px;
-  background: var(--grey-l1);
+  background: var(--grey-d1);
+  color: var(--grey-l1);
 }
 
 .sgr-core-page {
   flex: 1;
   height: 100vh;
-  padding: 24px;
+  padding: 24px 48px;
   overflow-y: auto;
 }
 
@@ -27,7 +28,65 @@
 
 .sgr-code-snippet {
   padding: 12px;
-  margin-top: 12px;
+  font-size: .75rem;
   border-radius: 6px;
   border: 1px solid var(--grey-l1);
+}
+
+.sgr-snpt-tgl {
+  margin: 24px 0;
+}
+
+.sgr-snpt-tgl__toggles {
+  padding-left: 6px;
+  margin-bottom: -1px;
+}
+
+.sgr-snpt-tgl__toggles button {
+  padding: 6px 12px;
+  margin-right: 6px;
+  background: white;
+  border: 1px solid var(--grey-l1);
+  border-radius: 6px 6px 0 0;
+}
+
+.sgr-snpt-tgl__toggles button.is-active {
+  color: var(--brand-primary);
+  border-bottom-color: white;
+}
+
+.sgr-menu__logo {
+  padding: 24px;
+  background: radial-gradient(var(--brand-secondary), var(--brand-primary));
+  color: white;
+  text-align: center;
+}
+
+.sgr-menu__opt {
+  padding: 3px 0;
+  border-bottom: 1px solid var(--grey-l1);
+  transform: translateX(-50%);
+  transition: transform .4s ease-in-out;
+  cursor: pointer;
+}
+
+.sgr-menu__opt:nth-child(odd) {
+  transform: translateX(-70%);
+}
+
+.sgr-menu:hover .sgr-menu__opt {
+  transform: translateX(0%);
+}
+.sgr-menu-title {
+  transform: translateX(-100%);
+  transition: transform .3s ease-in-out;
+}
+
+.sgr-menu:hover .sgr-menu-title {
+  transform: translateX(0%);
+}
+
+.sgr-menu-title {
+  padding: 0 6px;
+  font-size: .75rem;
 }

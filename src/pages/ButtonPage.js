@@ -31,13 +31,11 @@ const ButtonPage = () => {
       <div className="sgr-cpage__display">
         <Button disabled>Primary Disabled</Button>
 
-        <div className="sgr-code-snippet">
-          <pre className="prettyprint">
-            <code>
-              &lt;Button disabled>Primary Button&lt;/Button>
-            </code>
-          </pre>
-        </div>
+<CodeSnippet>
+  {`
+  <Button disabled>Primary Disabled</Button>
+  `}
+</CodeSnippet>
       </div>
     </div>
 
@@ -48,6 +46,12 @@ const ButtonPage = () => {
 
       <div className="sgr-cpage__display">
         <Button icon dataIcon="check">Primary w/ Icon</Button>
+
+<CodeSnippet>
+  {`
+  <Button icon dataIcon="check">Primary w/ Icon</Button>
+  `}
+</CodeSnippet>
       </div>
     </div>
 
@@ -58,6 +62,12 @@ const ButtonPage = () => {
 
       <div className="sgr-cpage__display">
         <Button material icon dataIcon="check">Primary Material</Button>
+
+<CodeSnippet>
+  {`
+  <Button material icon dataIcon="check">Primary Material</Button>
+  `}
+</CodeSnippet>
       </div>
     </div>
 
@@ -67,7 +77,13 @@ const ButtonPage = () => {
       </div>
 
       <div className="sgr-cpage__display">
-        <Button block icon dataIcon="check">Primary Block</Button>
+        <Button block>Primary Block</Button>
+
+<CodeSnippet>
+  {`
+  <Button block>Primary Block</Button>
+  `}
+</CodeSnippet>
       </div>
     </div>
 
@@ -78,6 +94,12 @@ const ButtonPage = () => {
 
       <div className="sgr-cpage__display">
         <Button circle dataIcon="check" />
+
+<CodeSnippet>
+  {`
+  <Button circle dataIcon="check" />
+  `}
+</CodeSnippet>
       </div>
     </div>
     </>

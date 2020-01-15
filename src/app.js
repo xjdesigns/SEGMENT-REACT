@@ -1,18 +1,21 @@
 import React from 'react'
 import './docs.css'
 import './prettyprint.css'
-import { ButtonPage } from './pages'
+import Menu from './menu'
+import {
+  ButtonPage,
+  FormPage,
+} from './pages'
 
 // TODO: create routing for pages
 const App = () => {
   return (
     <div className="sgr-core">
-      <div className="sgr-core-menu">
-        Menu
-      </div>
+      <Menu />
 
       <div className="sgr-core-page">
-        <ButtonPage />
+        {/* <ButtonPage /> */}
+        <FormPage />
       </div>
     </div>
   )
