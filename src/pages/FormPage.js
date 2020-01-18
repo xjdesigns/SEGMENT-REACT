@@ -1,5 +1,4 @@
 import React from 'react'
-import CodeSnippet from '../helper/code-snippet'
 import SnippetToggle from '../helper/snippet-toggle'
 import { Form, Input, TextArea } from '../lib'
 
@@ -53,7 +52,7 @@ const FormPage = () => {
   </Form>
   `}
   propList={`
-    // Input Props
+  // Input Props
   label, (required)
   id, (required)
   type = 'text', (default)

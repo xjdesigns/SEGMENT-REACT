@@ -1,13 +1,8 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import CodeSnippet from './code-snippet'
 
 const SnippetToggle = ({component, propList}) => {
   const [which, toggleDis] = useState('comp')
-
-  // NOT WORKING ???
-  useEffect(() => {
-    window.PR.prettyPrint()
-  })
 
   return (
     <div className="sgr-snpt-tgl">

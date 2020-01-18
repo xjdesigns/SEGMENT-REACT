@@ -1,6 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 const CodeSnippet = ({children}) => {
+  useEffect(() => {
+    window.PR.prettyPrint()
+  })
+
   return (
     <div className="sgr-code-snippet">
       <pre className="prettyprint">

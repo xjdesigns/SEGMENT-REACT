@@ -1,3 +1,11 @@
+.sgr-base div {
+  margin-bottom: 24px;
+}
+
+.sgr-base p {
+  margin-bottom: 6px;
+}
+
 .sgr-core {
   display: flex;
   height: 100vh;
@@ -77,6 +85,7 @@
 .sgr-menu:hover .sgr-menu__opt {
   transform: translateX(0%);
 }
+
 .sgr-menu-title {
   transform: translateX(-100%);
   transition: transform .3s ease-in-out;
@@ -89,4 +98,22 @@
 .sgr-menu-title {
   padding: 0 6px;
   font-size: .75rem;
+}
+
+.sgr-menu-list {
+  display: none;
+  padding: 6px;
+  font-size: .75rem;
+}
+
+.sgr-menu-list.is-open {
+  display: block;
+}
+
+.sgr-menu-list ul li {
+  padding: 0 0 6px;
+}
+
+.sgr-menu-list ul li:last-child {
+  padding: 0;
 }

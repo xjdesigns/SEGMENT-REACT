@@ -1,21 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './docs.css'
 import './prettyprint.css'
 import Menu from './menu'
-import {
-  ButtonPage,
-  FormPage,
-} from './pages'
+import Routing from './routing'
 
-// TODO: create routing for pages
 const App = () => {
+  const [route, setRoute] = useState('base')
+
   return (
     <div className="sgr-core">
-      <Menu />
+      <Menu setRoute={setRoute} />
 
       <div className="sgr-core-page">
-        {/* <ButtonPage /> */}
-        <FormPage />
+        <Routing route={route} />
       </div>
     </div>
   )

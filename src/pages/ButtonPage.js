@@ -1,5 +1,5 @@
 import React from 'react'
-import CodeSnippet from '../helper/code-snippet'
+import SnippetToggle from '../helper/snippet-toggle'
 import { Button } from '../lib'
 
 const ButtonPage = () => {
@@ -14,28 +14,27 @@ const ButtonPage = () => {
         <Button>Primary Button</Button>
         <Button inverted>Inverted Button</Button>
 
-<CodeSnippet>
-  {`
+<SnippetToggle
+  component={`
+  import { Button } from 'segment_react'
+
   <Button>Primary Button</Button>
   <Button inverted>Inverted Button</Button>
   `}
-</CodeSnippet>
-      </div>
-    </div>
-
-    <div className="sgr-cpage">
-      <div className="sgr-cpage__title">
-        <h5>Button Disabled</h5>
-      </div>
-
-      <div className="sgr-cpage__display">
-        <Button disabled>Primary Disabled</Button>
-
-<CodeSnippet>
-  {`
-  <Button disabled>Primary Disabled</Button>
+  propList={`
+  // Button Props
+  children,
+  variant = 'pr | sd', (optional)
+  icon = false, (optional)
+  material = false, (optional)
+  circle = false, (optional)
+  block = false, (optional)
+  inverted = false, (optional)
+  disabled = false, (optional)
+  dataIcon, (optional)
+  ...additionalProps (additional props lets you pass anything)
   `}
-</CodeSnippet>
+/>
       </div>
     </div>
 
@@ -47,27 +46,26 @@ const ButtonPage = () => {
       <div className="sgr-cpage__display">
         <Button icon dataIcon="check">Primary w/ Icon</Button>
 
-<CodeSnippet>
-  {`
+<SnippetToggle
+  component={`
+  import { Button } from 'segment_react'
+
   <Button icon dataIcon="check">Primary w/ Icon</Button>
   `}
-</CodeSnippet>
-      </div>
-    </div>
-
-    <div className="sgr-cpage">
-      <div className="sgr-cpage__title">
-        <h5>Button Material</h5>
-      </div>
-
-      <div className="sgr-cpage__display">
-        <Button material icon dataIcon="check">Primary Material</Button>
-
-<CodeSnippet>
-  {`
-  <Button material icon dataIcon="check">Primary Material</Button>
+  propList={`
+  // Button Props
+  children,
+  variant = 'pr | sd', (optional)
+  icon = false, (optional)
+  material = false, (optional)
+  circle = false, (optional)
+  block = false, (optional)
+  inverted = false, (optional)
+  disabled = false, (optional)
+  dataIcon, (optional)
+  ...additionalProps (additional props lets you pass anything)
   `}
-</CodeSnippet>
+/>
       </div>
     </div>
 
@@ -79,27 +77,57 @@ const ButtonPage = () => {
       <div className="sgr-cpage__display">
         <Button block>Primary Block</Button>
 
-<CodeSnippet>
-  {`
+<SnippetToggle
+  component={`
+  import { Button } from 'segment_react'
+
   <Button block>Primary Block</Button>
   `}
-</CodeSnippet>
+  propList={`
+  // Button Props
+  children,
+  variant = 'pr | sd', (optional)
+  icon = false, (optional)
+  material = false, (optional)
+  circle = false, (optional)
+  block = false, (optional)
+  inverted = false, (optional)
+  disabled = false, (optional)
+  dataIcon, (optional)
+  ...additionalProps (additional props lets you pass anything)
+  `}
+/>
       </div>
     </div>
 
     <div className="sgr-cpage">
       <div className="sgr-cpage__title">
-        <h5>Button Circle Icon only</h5>
+        <h5>Button Circle</h5>
       </div>
 
       <div className="sgr-cpage__display">
-        <Button circle dataIcon="check" />
+        <Button circle data-icon="check" />
 
-<CodeSnippet>
-  {`
-  <Button circle dataIcon="check" />
+<SnippetToggle
+  component={`
+  import { Button } from 'segment_react'
+
+  <Button circle data-icon="check" />
   `}
-</CodeSnippet>
+  propList={`
+  // Button Props
+  children,
+  variant = 'pr | sd', (optional)
+  icon = false, (optional)
+  material = false, (optional)
+  circle = false, (optional)
+  block = false, (optional)
+  inverted = false, (optional)
+  disabled = false, (optional)
+  dataIcon, (optional)
+  ...additionalProps (additional props lets you pass anything)
+  `}
+/>
       </div>
     </div>
     </>
