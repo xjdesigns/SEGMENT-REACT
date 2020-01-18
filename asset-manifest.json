@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Segment-REACT/static/css/main.334002ca.chunk.css",
+    "main.js": "/Segment-REACT/static/js/main.029982bc.chunk.js",
+    "main.js.map": "/Segment-REACT/static/js/main.029982bc.chunk.js.map",
+    "runtime-main.js": "/Segment-REACT/static/js/runtime-main.e4868476.js",
+    "runtime-main.js.map": "/Segment-REACT/static/js/runtime-main.e4868476.js.map",
+    "static/js/2.629e04db.chunk.js": "/Segment-REACT/static/js/2.629e04db.chunk.js",
+    "static/js/2.629e04db.chunk.js.map": "/Segment-REACT/static/js/2.629e04db.chunk.js.map",
+    "index.html": "/Segment-REACT/index.html",
+    "precache-manifest.1061352b4c58ca30380c9aff2509ad38.js": "/Segment-REACT/precache-manifest.1061352b4c58ca30380c9aff2509ad38.js",
+    "service-worker.js": "/Segment-REACT/service-worker.js",
+    "static/css/main.334002ca.chunk.css.map": "/Segment-REACT/static/css/main.334002ca.chunk.css.map",
+    "static/js/2.629e04db.chunk.js.LICENSE": "/Segment-REACT/static/js/2.629e04db.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e4868476.js",
+    "static/js/2.629e04db.chunk.js",
+    "static/css/main.334002ca.chunk.css",
+    "static/js/main.029982bc.chunk.js"
+  ]
+}
