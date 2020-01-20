@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "911a5ad39f98fab98930ba9fe26990d7",
+    "revision": "6f5707f46d04fe5096973de3ffbb25f6",
     "url": "/SEGMENT-REACT/index.html"
   },
   {
-    "revision": "a9a21556b784ce56106d",
-    "url": "/SEGMENT-REACT/static/css/main.334002ca.chunk.css"
+    "revision": "b961b6c8c83bd6c5558f",
+    "url": "/SEGMENT-REACT/static/css/main.9533d9c2.chunk.css"
   },
   {
     "revision": "2e76a9646a89817ba9a2",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/SEGMENT-REACT/static/js/2.629e04db.chunk.js.LICENSE"
   },
   {
-    "revision": "a9a21556b784ce56106d",
-    "url": "/SEGMENT-REACT/static/js/main.029982bc.chunk.js"
+    "revision": "b961b6c8c83bd6c5558f",
+    "url": "/SEGMENT-REACT/static/js/main.c2e5042f.chunk.js"
   },
   {
     "revision": "259dcf420b9a7f6bc835",

@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/SEGMENT-REACT/static/css/main.334002ca.chunk.css",
-    "main.js": "/SEGMENT-REACT/static/js/main.029982bc.chunk.js",
-    "main.js.map": "/SEGMENT-REACT/static/js/main.029982bc.chunk.js.map",
+    "main.css": "/SEGMENT-REACT/static/css/main.9533d9c2.chunk.css",
+    "main.js": "/SEGMENT-REACT/static/js/main.c2e5042f.chunk.js",
+    "main.js.map": "/SEGMENT-REACT/static/js/main.c2e5042f.chunk.js.map",
     "runtime-main.js": "/SEGMENT-REACT/static/js/runtime-main.2aec1498.js",
     "runtime-main.js.map": "/SEGMENT-REACT/static/js/runtime-main.2aec1498.js.map",
     "static/js/2.629e04db.chunk.js": "/SEGMENT-REACT/static/js/2.629e04db.chunk.js",
     "static/js/2.629e04db.chunk.js.map": "/SEGMENT-REACT/static/js/2.629e04db.chunk.js.map",
     "index.html": "/SEGMENT-REACT/index.html",
-    "precache-manifest.51a775b1ad912902cef3a6ad9a6619a7.js": "/SEGMENT-REACT/precache-manifest.51a775b1ad912902cef3a6ad9a6619a7.js",
+    "precache-manifest.880fabc488683f2d880561d0c68fa47e.js": "/SEGMENT-REACT/precache-manifest.880fabc488683f2d880561d0c68fa47e.js",
     "service-worker.js": "/SEGMENT-REACT/service-worker.js",
-    "static/css/main.334002ca.chunk.css.map": "/SEGMENT-REACT/static/css/main.334002ca.chunk.css.map",
+    "static/css/main.9533d9c2.chunk.css.map": "/SEGMENT-REACT/static/css/main.9533d9c2.chunk.css.map",
     "static/js/2.629e04db.chunk.js.LICENSE": "/SEGMENT-REACT/static/js/2.629e04db.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.2aec1498.js",
     "static/js/2.629e04db.chunk.js",
-    "static/css/main.334002ca.chunk.css",
-    "static/js/main.029982bc.chunk.js"
+    "static/css/main.9533d9c2.chunk.css",
+    "static/js/main.c2e5042f.chunk.js"
   ]
 }
