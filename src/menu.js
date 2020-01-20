@@ -1,6 +1,7 @@
 import React from 'react'
 import InnerMenu from './inner-menu'
 import { ELEMENTS } from './routes/elements'
+import { COMPONENTS } from './routes/components'
 
 const Menu = ({ setRoute }) => {
   return (
@@ -19,7 +20,8 @@ const Menu = ({ setRoute }) => {
         </div>
       </div>
 
-      <InnerMenu title="Elements" setRoute={setRoute} routes={ELEMENTS} />
+      <InnerMenu setRoute={setRoute} routes={ELEMENTS} />
+      <InnerMenu setRoute={setRoute} routes={COMPONENTS} />
 
       <div className="sgr-menu__opt">
         <div className="sgr-menu-title" onClick={() => setRoute('home')}>

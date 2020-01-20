@@ -31,6 +31,7 @@ const ButtonPage = () => {
   block = false, (optional)
   inverted = false, (optional)
   disabled = false, (optional)
+  size, (optional) values = 'sm' | 'lg'
   dataIcon, (optional)
   ...additionalProps (additional props lets you pass anything)
   `}
@@ -62,6 +63,7 @@ const ButtonPage = () => {
   block = false, (optional)
   inverted = false, (optional)
   disabled = false, (optional)
+  size, (optional) values = 'sm' | 'lg'
   dataIcon, (optional)
   ...additionalProps (additional props lets you pass anything)
   `}
@@ -93,6 +95,7 @@ const ButtonPage = () => {
   block = false, (optional)
   inverted = false, (optional)
   disabled = false, (optional)
+  size, (optional) values = 'sm' | 'lg'
   dataIcon, (optional)
   ...additionalProps (additional props lets you pass anything)
   `}
@@ -124,6 +127,7 @@ const ButtonPage = () => {
   block = false, (optional)
   inverted = false, (optional)
   disabled = false, (optional)
+  size, (optional) values = 'sm' | 'lg'
   dataIcon, (optional)
   ...additionalProps (additional props lets you pass anything)
   `}

@@ -16,6 +16,9 @@ export const ELEMENTS = {
     title: 'Radio',
     route: 'radio'
   },{
+    title: 'Range Slider',
+    route: 'rangeslider'
+  },{
     title: 'Toggle',
     route: 'toggle'
   }]

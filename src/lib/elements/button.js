@@ -9,6 +9,7 @@ const Button = ({
   block = false,
   inverted = false,
   disabled = false,
+  size,
   dataIcon,
   ...additionalProps
 }) => {
@@ -18,6 +19,7 @@ const Button = ({
   const isCircle = circle ? `${base}--circle` : ''
   const isBlock = block ? `${base}--block` : ''
   const isInverted = inverted ? `${base}--${variant}--inverted` : ''
+  const hasSize = size ? `${base}--${size}` : ''
 
   return (
     <button
@@ -28,6 +30,7 @@ const Button = ({
         ${isMaterial}
         ${isCircle}
         ${isBlock}
+        ${hasSize}
       `}
       data-icon={dataIcon}
       disabled={disabled}

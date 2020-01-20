@@ -32,4 +32,9 @@ describe('<Button />', () => {
     const btn = shallow(<Button inverted />)
     expect(btn.hasClass('spx-btn--pr--inverted')).toEqual(true)
   })
+
+  it('size class', () => {
+    const btn = shallow(<Button size="sm" />)
+    expect(btn.hasClass('spx-btn--sm')).toEqual(true)
+  })
 })

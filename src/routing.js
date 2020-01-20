@@ -1,5 +1,4 @@
 import React from 'react'
-import Menu from './menu'
 import {
   HomePage,
   BasePage,
@@ -9,6 +8,9 @@ import {
   ProgressBarPage,
   RadioPage,
   TogglePage,
+  RangeSliderPage,
+  AccordionPage,
+  ActionPanelPage,
 } from './pages'
 
 const Routing = ({ route }) => {
@@ -37,6 +39,15 @@ const Routing = ({ route }) => {
     )}
     {route === 'toggle' && (
       <TogglePage />
+    )}
+    {route === 'rangeslider' && (
+      <RangeSliderPage />
+    )}
+    {route === 'accordion' && (
+      <AccordionPage />
+    )}
+    {route === 'actionpanel' && (
+      <ActionPanelPage />
     )}
     </>
   )

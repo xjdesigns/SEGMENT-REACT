@@ -24,7 +24,7 @@ const BasePage = () => {
       <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <link rel="stylesheet" href="css/em-reset.css">
-      <link rel="stylesheet" href="SIXPIXELS/style.css">
+      <link rel="stylesheet" href="SEGMENT/1.0.0/1.0.0.css">
     </head>
     <body>
     </body>

@@ -5,14 +5,18 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__",
+    "build:docs": "react-scripts build",
     "test": "CI=true react-scripts test --env=jsdom",
     "test:watch": "react-scripts test --env=jsdom",
     "test:coverage": "npm test -- --coverage",
     "test:coveralls": "npm run test:coverage -- --coverageReporters=text-lcov | coveralls",
     "eject": "react-scripts eject",
     "babel:watch": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --watch --copy-files --ignore __tests__,spec.js,test.js,__snapshots__",
-    "release": "standard-version"
+    "release": "standard-version",
+    "predeploy": "npm run build:docs",
+    "deploy": "gh-pages -d build"
   },
+  "homepage": "http://xjdesigns.github.io/SEGMENT-REACT",
   "peerDependencies": {
     "react": "^16.8.1"
   },
@@ -26,6 +30,7 @@
     "coveralls": "^3.0.9",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
+    "gh-pages": "^2.2.0",
     "jest": "^24.9.0",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
@@ -50,6 +55,8 @@
     ]
   },
   "jest": {
-    "collectCoverageFrom": ["**/lib/**/*.{js,jsx,mjs}"]
+    "collectCoverageFrom": [
+      "**/lib/**/*.{js,jsx,mjs}"
+    ]
   }
 }

@@ -5,7 +5,7 @@ import Menu from './menu'
 import Routing from './routing'
 
 const App = () => {
-  const [route, setRoute] = useState('base')
+  const [route, setRoute] = useState('actionpanel')
 
   return (
     <div className="sgr-core">

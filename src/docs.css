@@ -111,9 +111,9 @@
 }
 
 .sgr-menu-list ul li {
-  padding: 0 0 6px;
+  padding: 6px;
 }
 
 .sgr-menu-list ul li:last-child {
-  padding: 0;
+  padding: 6px 6px 0;
 }

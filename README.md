@@ -10,7 +10,7 @@ To develop locally you can run the start script to serve a web server. Eventuall
 This approach is manual but it does have the added benefit of isolation and full control.
 
 ## Docs
-Coming soon...
+Visit the docs [here](https://xjdesigns.github.io/SEGMENT-REACT/)
 
 ## CSS (v1.0.0)
 This library is intended to be used with SEGMENT CSS. You will need to include the css files to have proper styling.
