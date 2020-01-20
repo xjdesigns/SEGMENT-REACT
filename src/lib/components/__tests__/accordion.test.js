@@ -17,4 +17,11 @@ describe('<Accordion />', () => {
     const comp = shallow(<Accordion><div><p>Hello</p></div></Accordion>)
     expect(comp.find('p')).toHaveLength(1)
   })
+
+  it('should test the toggle action', () => {
+    const comp = shallow(<Accordion data-id="accordion" />)
+    expect(comp.find('[data-id="accordion"]').hasClass('is-active')).toBe(false)
+    comp.find('[data-id="AccordionToggleBtn"]').simulate('click')
+    expect(comp.find('[data-id="accordion"]').hasClass('is-active')).toBe(true)
+  })
 })
