@@ -9,6 +9,7 @@ import TogglePage from './TogglePage'
 import RangeSliderPage from './RangeSliderPage'
 import AccordionPage from './AccordionPage'
 import ActionPanelPage from './ActionPanelPage'
+import LoadingPage from './LoadingPage'
 
 export {
   HomePage,
@@ -22,4 +23,5 @@ export {
   RangeSliderPage,
   AccordionPage,
   ActionPanelPage,
+  LoadingPage,
 }

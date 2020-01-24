@@ -6,5 +6,8 @@ export const COMPONENTS = {
   }, {
     title: 'Action Panel',
     route: 'actionpanel'
+  }, {
+    title: 'Loading',
+    route: 'loading'
   }]
 }

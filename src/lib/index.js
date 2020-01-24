@@ -12,6 +12,7 @@ import RangeSlider from './elements/range-slider'
 // COMPONENTS
 import Accordion from './components/accordion'
 import ActionPanel from './components/action-panel'
+import Loading from './components/loading'
 
 export {
   Button,
@@ -25,4 +26,5 @@ export {
   RangeSlider,
   Accordion,
   ActionPanel,
+  Loading,
 }

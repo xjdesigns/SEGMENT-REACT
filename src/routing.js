@@ -11,6 +11,7 @@ import {
   RangeSliderPage,
   AccordionPage,
   ActionPanelPage,
+  LoadingPage,
 } from './pages'
 
 const Routing = ({ route }) => {
@@ -48,6 +49,9 @@ const Routing = ({ route }) => {
     )}
     {route === 'actionpanel' && (
       <ActionPanelPage />
+    )}
+    {route === 'loading' && (
+      <LoadingPage />
     )}
     </>
   )
