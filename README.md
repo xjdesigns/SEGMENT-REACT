@@ -1,5 +1,5 @@
 # Segment React Component Library
-[![Build Status](https://travis-ci.org/xjdesigns/SEGMENT-REACT.svg?branch=master)](https://travis-ci.org/xjdesigns/SEGMENT-REACT)
+[![Node.js CI](https://github.com/xjdesigns/SEGMENT-REACT/actions/workflows/node.js.yml/badge.svg)](https://github.com/xjdesigns/SEGMENT-REACT/actions/workflows/node.js.yml)
 [![Coverage Status](https://coveralls.io/repos/github/xjdesigns/SEGMENT-REACT/badge.svg?branch=master)](https://coveralls.io/github/xjdesigns/SEGMENT-REACT?branch=master)
 
 ## Getting started

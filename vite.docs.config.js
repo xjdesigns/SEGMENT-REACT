@@ -7,6 +7,8 @@ console.warn("Did this even run")
 export default defineConfig({
   plugins: [react()],
 
+  base: '/SEGMENT-REACT/',
+
   build: {
     outDir: 'docs'
   }
