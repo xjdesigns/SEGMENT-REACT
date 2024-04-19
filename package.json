@@ -6,6 +6,7 @@
   "files": [
     "dist/"
   ],
+  "homepage": "http://xjdesigns.github.io/SEGMENT-REACT",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
