@@ -1,62 +1,40 @@
 {
-  "name": "segment_react",
-  "description": "React components for use with segment css",
-  "version": "0.1.1",
+  "name": "segment-vite",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__",
-    "build:docs": "react-scripts build",
-    "test": "CI=true react-scripts test --env=jsdom",
-    "test:watch": "react-scripts test --env=jsdom",
-    "test:coverage": "npm test -- --coverage",
-    "test:coveralls": "npm run test:coverage -- --coverageReporters=text-lcov | coveralls",
-    "eject": "react-scripts eject",
-    "babel:watch": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --watch --copy-files --ignore __tests__,spec.js,test.js,__snapshots__",
-    "release": "standard-version",
-    "predeploy": "npm run build:docs",
-    "deploy": "gh-pages -d build"
-  },
-  "homepage": "http://xjdesigns.github.io/SEGMENT-REACT",
-  "peerDependencies": {
-    "react": "^16.8.1"
+    "dev": "vite",
+    "build": "vite build",
+    "build:docs": "vite build --config vite.docs.config.js",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "test:ui": "vitest --ui"
   },
   "devDependencies": {
-    "@babel/cli": "^7.7.7",
-    "@babel/core": "^7.7.7",
-    "@babel/plugin-proposal-class-properties": "^7.7.4",
-    "@babel/preset-react": "^7.7.4",
-    "babel-cli": "^6.26.0",
-    "babel-preset-react-app": "^9.1.0",
+    "@testing-library/jest-dom": "^6.4.2",
+    "@testing-library/react": "^15.0.2",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@vitejs/plugin-react": "^4.2.1",
+    "@vitest/coverage-v8": "^1.5.0",
+    "@vitest/ui": "^1.5.0",
     "coveralls": "^3.0.9",
-    "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.2",
-    "gh-pages": "^2.2.0",
-    "jest": "^24.9.0",
-    "react": "^16.8.1",
-    "react-dom": "^16.8.1",
-    "react-scripts": "^3.3.0"
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "jsdom": "^24.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "vite": "^5.2.0",
+    "vitest": "^1.5.0"
   },
-  "main": "dist/index.js",
-  "module": "dist/index.js",
-  "files": [
-    "dist",
-    "README.md"
-  ],
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "jest": {
-    "collectCoverageFrom": [
-      "**/lib/**/*.{js,jsx,mjs}"
-    ]
+  "peerDependencies": {
+    "react": "^18.2.0"
   }
 }
