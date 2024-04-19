@@ -32,7 +32,8 @@ export default defineConfig({
 
     coverage: {
       include: ['src/lib/{elements,components}/*.jsx'],
-      provider: 'v8'
+      provider: 'v8',
+      reporter: ['lcov', 'html', 'json', 'clover']
     },
   }
 })
